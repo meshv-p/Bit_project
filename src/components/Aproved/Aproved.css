@@ -1,0 +1,177 @@
+
+.top-banner3{
+    width: 100%;
+    height: fit-content;
+    background: url('../../images/approved3.png') no-repeat center;
+    background-size:cover;
+    background-attachment: fixed;
+    /* */
+}
+  .custom1{
+    background-color: rgba(98, 13, 33, 0.63);
+   
+  }
+  .custom2{
+    background-color: rgba(70, 87, 156, 0.8);
+   
+  }
+  .custom3{
+    background-color: rgba(72, 115, 39, 0.76);
+   
+  }
+  .viewBtn{
+  font-size: larger;
+  height: 58px;
+  width: 120px;
+  }
+
+  /* top 2 css */
+  html,
+body {
+    font-family: "Lato", sans-serif;
+}
+.others {
+    background: #212121 url('../../images/approved1.png') right top no-repeat;
+    background-size: cover;
+    background-position: 17% -4%;
+    position: relative;
+    background-attachment: fixed;
+    z-index: -100;
+    color: white !important;
+}
+
+.home--others {
+    position: relative;
+    background: #212121 url('../../images/approved2.png') !important;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+    z-index: -100;
+    
+}
+
+.others .overlay {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:rgba(108, 255, 220, 0.35);
+    z-index: -1;
+}
+
+.over-right {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(254, 104, 133, 0.8);  
+    z-index: -1;
+}
+
+
+
+
+@media (max-width: 890px) {
+ .aph h1{
+    font-size: 3rem ;
+ }
+ .lineH p{
+    font-size: 1rem !important;
+    letter-spacing: 1px !important;
+    line-height: 1rem !important;
+ }
+}
+
+@media (max-width: 734px) {
+.aph h1{
+    /* font-size: 2.2rem !important; */
+    font-size: 2.2rem;
+}
+}
+
+/*for Mobile*/
+
+
+@media (max-width: 572px) {
+    .others .overlay {
+        width: 100%;
+    }
+   
+   .over-right {
+        width: 100%;
+    } 
+   
+}
+
+.lineH p{
+    line-height: 2.2rem !important;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+ .aph h1{
+    font-weight: 700;
+}
+.btnC{
+    background: transparent;
+    color: black;
+    font-weight: bold;
+    border: none;
+    font-size: 2rem;
+    line-height: 9rem;
+}
+
+.others button{
+    color: white;
+}
+
+
+
+.custom h1{
+    font-size: 2rem;
+}
+
+.row{
+    margin: 0;
+    padding: 0;
+}
+
+.top-banner3{
+    padding: 0 !important;
+}
+.home--others .moveR{
+width: 50%;
+}
+
+/* Cif Css */
+.smc h1{
+    font-size: 1.5rem;
+    }
+    .smc p{
+    font-size: 1rem;
+    }
+    .smc button{
+    line-height: 3;
+    }
+    .cif button{
+        font-size: 2rem;
+    }
+    .lineHeight{
+    line-height: 5;
+    }
+    .CustHColor{
+    border-radius: 10px;
+    background: rgba(177, 61, 61, 0.73);
+    font-family: Inter;
+    }
+    .CustHColor button{
+        background: transparent;
+        color: white;
+        font-weight: 800 !important;
+       border: 0;
+    }
+    
+    .cif{
+        height: 70vh !important;
+        width: 100% !important;
+    }

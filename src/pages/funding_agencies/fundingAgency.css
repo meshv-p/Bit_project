@@ -1,0 +1,31 @@
+.card-title {
+  padding-right: 5px;
+}
+.funding-card .card-info {
+  width: 17rem;
+  padding-right: 10px;
+}
+.logo-image {
+  width: 200px;
+}
+
+@media (max-width: 575px) {
+  .col {
+    height: 125px !important;
+  }
+  .logo-image img {
+    width: 5rem;
+  }
+  .funding-card .card-info {
+    width: 40rem;
+  }
+}
+@media (max-width: 375px) {
+  .logo-image {
+    display: none !important;
+  }
+  .card-info {
+    align-items: center !important;
+    text-align: center !important;
+  }
+}

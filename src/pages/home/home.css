@@ -1,0 +1,103 @@
+#hero-section {
+  bottom: 5rem;
+}
+.banner {
+  height: 90vh;
+}
+.image {
+  background: center/cover no-repeat;
+  transition: 2s;
+}
+.head-text {
+  width: min-content;
+}
+.card-container h1 {
+  letter-spacing: normal;
+}
+.card-container {
+  color: var(--yellow);
+  background-color: var(--head-color);
+  border: 5px solid var(--head-color);
+  text-align: center;
+  position: relative;
+  bottom: 3rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.card-container:hover {
+  background: var(--bg-color);
+  border: 5px solid var(--head-color);
+  color: var(--head-color);
+  scale: 1.1;
+}
+.card-sm {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.line {
+  width: 115px;
+  height: 3px;
+  background-color: #10316b;
+}
+.star {
+  font-size: 15px;
+  margin: 0 10px;
+  color: #10316b;
+}
+@media (max-width: 768px) {
+  .head-text {
+    width: auto;
+  }
+}
+
+@media (max-width: 625px) {
+  .card-sm {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .innovation-images img {
+    width: 100% !important;
+  }
+}
+/*=====innovation card=====*/
+.innovation-card {
+  background-color: var(--head-color);
+  color: var(--bg-color);
+}
+.innovation-card h3 {
+  background-color: var(--yellow);
+  color: var(--head-color);
+  text-align: center;
+}
+.img-fluid {
+  height: -webkit-fill-available;
+}
+#recentUpdates h5 {
+  color: var(--yellow) !important;
+}
+#recentUpdates .custom-card-body {
+  display: flex;
+  position: absolute;
+  bottom: 0px;
+  background: #2125299c;
+  border-radius: 12px;
+  padding: 10px !important;
+  color: var(--bg-color);
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: 0.3s;
+}
+#recentUpdates .custom-card-body:hover {
+  background: var(--banner-red);
+}
+.innovation-images img {
+  height: 350px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+@media (min-width: 625px) and (max-width: 991.98px) {
+  .innovation-images img {
+    width: 70% !important;
+  }
+}

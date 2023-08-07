@@ -1,0 +1,61 @@
+/* Table css */
+
+.customB {
+  font-size: 20px;
+  color:var(--head-color) !important;
+  background:var(--bg-color);
+}
+/* Hover effect of Rows */
+.table-hover-scale tbody tr:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transition: transform 0.2s ease-in-out;
+  .customB {
+    background: var(--yellow);
+  }
+}
+.customB a {
+  text-decoration: none;
+  color: var(--head-color);
+}
+.customH{
+background: var(--head-color) !important;
+}
+
+/* /Media query/   */
+
+@media screen and (min-width: 321px) and (max-width: 767px) {
+  .myText {
+    font-size: 21px;
+  }
+  .customH {
+    font-size: 12px;
+  }
+  .customB {
+    font-size: 10px;
+  }
+
+  
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .myText {
+    font-size: 32px;
+  }
+  .customH {
+    font-size: 18px;
+  }
+  .customB {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .myText {
+    font-size: 40px;
+  }
+  .customH {
+    font-size: 20px;
+  }
+  .customB {
+    font-size: 16px;
+  }
+}

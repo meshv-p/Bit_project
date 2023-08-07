@@ -1,0 +1,13 @@
+.ReasearchBanner{
+    background: url(../../images/banner-bg.png);
+    background-position: center;
+    background-size: cover;
+    height: 21vh;
+    mix-blend-mode: multiply;
+}
+@media (max-width: 480px){
+    .ReasearchBanner .btn{
+        width: max-content;
+        font-size: xx-small;
+    }
+}

@@ -1,0 +1,69 @@
+nav {
+  z-index: 1;
+  color: var(--head-color);
+  transition: all 0.5s ;
+}
+.navBg{
+  background: linear-gradient(270.3deg,#f2f7ff -7.67%,rgba(242, 247, 255, 0) 100%);
+}
+.active-nav{
+  background: var(--bg-color);
+}
+.resize-logo {
+  width: 50px;
+}
+.university-name {
+  font-size: 18px;
+}
+.navbar-nav li {
+  font-size: 14px;
+  transition: 0.3s;
+}
+.navbar-nav li:hover {
+  background: var(--yellow);
+  border-radius: 8px;
+}
+.dropdown-menu li a {
+  color: var(--bg-color);
+}
+.dropdown-menu li:hover,
+.dropdown-item:hover,
+.dropdown-item:active {
+  background: var(--yellow);
+  border-radius: 0;
+}
+.dropdown-menu[data-bs-popper] {
+  background: var(--head-color);
+  left: -6px;
+}
+@media (max-width: 991.98px) {
+  .navbar-nav{
+    display: flex;
+    position: fixed;
+    height: 100vh;
+    right: -300px;
+    width: 300px;
+    top: 0;
+    padding: 5rem 3rem;
+    background: var(--bg-color);
+    border-radius: 16px 0 0 16px;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    transition: 0.3s;
+  }
+  nav .active-nav{
+    right: 0 !important;
+  }
+  #close {
+    display: block !important;
+    position: absolute;
+    top: 22px;
+    left: 13px;
+    font-size: 35px;
+  }
+  .dropdown .dropdown-toggle:active + .dropdown-menu {
+    display: none;
+  }
+
+}

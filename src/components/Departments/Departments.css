@@ -1,0 +1,49 @@
+.sponser{
+    list-style: none !important;
+    margin: 0 !important; 
+    padding: 0;
+    
+}
+.whiteStar{
+color: #D9D9D9;
+width: 23px;
+height: 24px;
+}
+
+.SponserContainer li{
+color: #FFF;
+font-family: Roboto;
+font-size: 24px;
+font-weight: 800;
+}
+.SponserContainer{
+border-radius: 32px;
+background: #10316B;
+}
+
+@media (max-width:768px){
+.SponserContainer li{
+    font-size: 18px;
+}
+.Smain{
+    margin-top: 30px !important;
+}
+
+}
+@media (max-width:525px){
+.SponserContainer li{
+    text-align: center;
+    font-size: 15px;
+    margin-left: -60px !important;
+
+}
+
+}
+@media (max-width:445px){
+    .SponserContainer li{
+        font-size: 13px;
+        
+    }
+    }
+
+

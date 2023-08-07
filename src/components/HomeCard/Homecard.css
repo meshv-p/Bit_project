@@ -1,0 +1,44 @@
+#HomeCard{
+   max-width: 540px;
+}
+
+.imgWidth .row div img{
+   height: fit-content ;
+}
+.homePara .card-text{
+    font-size: 1.3rem;
+    color: #10316B;
+   
+}
+.homePara h1{
+    color: #10316B;
+}
+
+@media (max-width:1400px){
+   .imgWidth div .res{
+    display: flex;
+    align-items:flex-end;
+
+   } 
+}
+
+@media (max-width:890px){
+    .homePara .card-text{
+        font-size: 1.2rem !important;
+        line-height: 1.5 !important ;
+        letter-spacing: 2px !important;
+        font-weight: 500 !important;
+    }
+}
+@media (max-width:576px){
+    .imgWidth .row div img{
+        width: 100%;
+    }
+}
+.rounded-start{
+    border-radius: 35px !important;
+}
+.imgP img{
+    height: 475px !important;
+    width: 319px !important;
+}

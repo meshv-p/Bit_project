@@ -1,0 +1,6 @@
+/* Next and Previous Buttons */
+.customSmaller {
+    font-weight: 900;
+    font-size: 20px;
+    color: var(--head-color);
+  }
