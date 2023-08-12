@@ -48,20 +48,24 @@ export default function FundingTable({ card_details, columnNames, Indexes, link1
           <tbody>
             {visibleEntries.map((funding_card_details, rowIndex) => (
               <tr key={rowIndex}>
-                {Object.keys(funding_card_details).map((key, columnIndex) => {
+                <td td > {rowIndex + 1}</td>
+
+                {Object.keys(funding_card_details.attributes).map((key, columnIndex) => {
                   const isInvitationColumn = columnIndex === invitationColumnIndex;
                   const isHeadTalkColumn = columnIndex === headTalkColumnIndex;
                   const linkArray = isInvitationColumn ? link1 : isHeadTalkColumn ? link2 : null;
                   const link = linkArray ? linkArray[rowIndex] : null;
-
-                  return (
+                  console.log(funding_card_details.attributes, rowIndex)
+                  // <td td > { rowIndex }</td> 
+                  return (<>
                     <td key={columnIndex} className="p-3 text-center customB fw-bolder">
                       {link ? (
                         <Link to={link} target='_blank'>{funding_card_details[key]}</Link>
                       ) : (
-                        funding_card_details[key]
+                        funding_card_details.attributes[key]
                       )}
                     </td>
+                  </>
                   );
                 })}
               </tr>
@@ -75,7 +79,7 @@ export default function FundingTable({ card_details, columnNames, Indexes, link1
           handleNextPage={handleNextPage}
           handlePageChange={handlePageChange}
         />
-      </div>
+      </div >
     </>
   );
 }
